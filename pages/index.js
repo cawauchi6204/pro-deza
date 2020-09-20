@@ -16,6 +16,10 @@ const Home = ({ blogs }) => {
                 <h2>{blog.title}</h2>
               </a>
             </Link>
+            <Link href="/blogs/[id]" as={`blogs/${blog.id}`}>
+              <img style={{ cursor: 'pointer' }} src={blog.eyeCatch.url} />
+            </Link>
+            <p>{blog.publishDate}</p>
             {blog.tags.map(tag => (
               <React.Fragment key={tag.id}>
                 <span>{tag.name}</span>
