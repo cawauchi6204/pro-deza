@@ -1,11 +1,14 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
+import Header from '../components/Header'
+import Card from '../components/Card'
 
 //これはpropsで参照してprops.blogsでも取れるが、分割代入で{ blogs } とすることで使いやすくなる
 const Home = ({ blogs }) => {
   return (
     <div>
+      <Header />
       <h2>最新の記事</h2>
       <div>
         {blogs.map(blog => (
@@ -28,6 +31,7 @@ const Home = ({ blogs }) => {
             {/* タグを展開している */}
           </React.Fragment>
         ))}
+        <Card />
       </div>
     </div>
   );
