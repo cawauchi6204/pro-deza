@@ -32,6 +32,13 @@ export const getStaticPaths = async () => {
     const paths = repos.contents.map(repo => `/blogs/${repo.id}`);
     return { paths, fallback: false };
 };
+//fallbackは事前ビルドしたパス以外にアクセスしたときの動作を決めるものです。
+
+// false の場合
+// 404 pageとなります。
+
+// true の場合
+// 先程の例ではGitHubのAPIを使って30のページを事前にビルドしました。しかしZEITが管理するレポジトリは30以上存在します。別のレポジトリの名前でアクセスした場合には事前にビルドされていなくてもページを正しく表示させたいです。
 
 // 内容を返す
 export const getStaticProps = async context => {
