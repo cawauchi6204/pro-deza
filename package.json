@@ -14,6 +14,8 @@
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-lazy-load-component": "^1.0.9",
+    "react-lazy-load-image-component": "^1.5.0",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
@@ -21,7 +23,10 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
+    "postcss-preset-env": "^6.7.0",
     "react-is": "^16.13.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^1.8.10",
     "typescript": "^4.0.3"
   }
 }
