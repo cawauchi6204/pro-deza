@@ -7,9 +7,9 @@ const SideBar = () => (
 )
 
 const Wrapper = styled.section`
-    width:300px;
-    background-color:beige;
-    height:100%;
+    width:300;
+    background-color:gray;
+    height:100;
 `
 
 export default SideBar
