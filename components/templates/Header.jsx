@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import HeaderTitle from '../atoms/HeaderTitle'
 
 const AppHeader = styled.header`
-    width: 100%;
-    height:70px;
+    width: 100;
+    height:70;
     background-color:black;
 `
 
