@@ -2,18 +2,22 @@ import React from 'react'
 import fetch from 'isomorphic-unfetch';
 
 import Header from '../components/templates/Header'
-import Card from '../components/molecules/Card'
+import Footer from '../components/templates/Footer'
+import CardList from '../components/molecules/CardList'
 import SideBar from '../components/templates/SideBar'
 
 //これはpropsで参照してprops.blogsでも取れるが、分割代入で{ blogs } とすることで使いやすくなる
 const Home = ({ blogs }) => {
   return (
-    <div>
+    <>
       <Header />
-      <h2>最新の記事</h2>
-      <SideBar />
-      <Card blogs={blogs} />
-    </div>
+      <main>
+        <h2>最新の記事</h2>
+        <SideBar />
+        <CardList blogs={blogs} />
+      </main>
+      <Footer />
+    </>
   );
 };
 
