@@ -11,7 +11,7 @@ body {
 }
 
 .vertical-card {
-	@apply bg-white rounded-lg overflow-hidden shadow-xl my-6;
+	@apply bg-white rounded-lg overflow-hidden shadow-xl my-6 mx-0;
 	background-color: #f0f0f0;
 }
 

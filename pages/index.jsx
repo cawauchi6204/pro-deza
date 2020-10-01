@@ -11,12 +11,14 @@ const Home = ({ blogs }) => {
   return (
     <>
       <Header />
-      <main>
-        <h2 className="title top-title text-3xl">最新の記事</h2>
-        <p className="text-center text-teal-500 text-2xl py-4"></p>
-        <SideBar />
-        <CardList blogs={blogs} />
-      </main>
+      <div className="flex-row flex justify-between">
+        <main className="w-9/12">
+          <h2 className="title top-title text-3xl">最新の記事</h2>
+          <p className="text-center text-teal-500 text-2xl py-4"></p>
+          <CardList blogs={blogs} />
+        </main>
+        <SideBar className="w-full" />
+      </div>
       <Footer />
     </>
   );

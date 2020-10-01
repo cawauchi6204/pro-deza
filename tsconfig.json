@@ -24,7 +24,7 @@
     "**/*.tsx",
     "pages/index.jsx",
     "pages/_app.js",
-    "pages/blogs/[id].js",
+    "pages/blogs/[id].jsx",
     "pages/api/hello.js"
   ],
   "exclude": [
