@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+
 import CardImage from '../atoms/CardImage'
+import Tag from '../atoms/Tag'
 
 const Card = ({ blog }) => {
     return (
@@ -19,9 +21,7 @@ const Card = ({ blog }) => {
                             <div className="cursor-pointer">
                                 <p className="text-base leading-loose">{blog.title}</p>
                                 {blog.tags.map(tag => (
-                                    <React.Fragment key={tag.id}>
-                                        <span className="text-xs">{tag.name}</span>
-                                    </React.Fragment>
+                                    <Tag tag={tag} />
                                 ))}
                                 <p className="text-xs">{blog.publishDate}</p>
                             </div>

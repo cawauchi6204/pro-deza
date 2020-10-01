@@ -12,7 +12,7 @@ const Home = ({ blogs }) => {
     <>
       <Header />
       <main>
-        <h2 className="title text-green-500 text-3xl">最新の記事</h2>
+        <h2 className="title top-title text-3xl">最新の記事</h2>
         <p className="text-center text-teal-500 text-2xl py-4"></p>
         <SideBar />
         <CardList blogs={blogs} />
