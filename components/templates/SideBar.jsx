@@ -1,15 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
 
 const SideBar = () => (
-    <Wrapper>
-    </Wrapper>
+    <aside className="bg-gray-300">
+        <h3>cawauchi</h3>
+        <h3>Front-end engineer</h3>
+        <h3>Github</h3>
+        <h3>Email</h3>
+    </aside>
 )
 
-const Wrapper = styled.section`
-    width:300;
-    background-color:gray;
-    height:100;
-`
 
 export default SideBar

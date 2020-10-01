@@ -1,30 +1,19 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import HeaderTitle from '../atoms/HeaderTitle'
 
-const AppHeader = styled.header`
-    width: 100;
-    height:70;
-    background-color:black;
-`
-
-const NavOl = styled.ol`
-    margin:0;
-`
-
 const Header = () => {
     return (
-        <AppHeader>
+        <header className="w-full h-auto flex justify-between fixed bg-gray-100 p-2">
             <HeaderTitle titleName={'prodeza'} />
             <nav>
-                <NavOl>
+                <ul className="m-2 flex">
                     <li>このサイト</li>
                     <li>プログラミング</li>
                     <li>デザイン</li>
-                </NavOl>
+                </ul>
             </nav >
-        </AppHeader >
+        </header >
     )
 }
 
