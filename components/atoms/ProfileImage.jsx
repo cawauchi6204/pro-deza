@@ -1,11 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 
-const ProfileImage = (props) => <Img src={props.image} alt="プロフィールアイコン" />
+const ProfileImage = (props) => <img src={props.image} alt="プロフィールアイコン" className="rounded-full w-2/3 h-auto" />
 
-const Img = styled.img`
-    width:220px;
-    height:auto;
-`
 
 export default ProfileImage
