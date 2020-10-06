@@ -1,19 +1,30 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch';
+import marked from 'marked'
+
+import Tag from '../../components/atoms/Tag'
 
 const BlogId = ({ blog }) => {
     return (
-        <div>
-            <h1>{blog.title}</h1>
-            <div>
-                {blog.tags.map(tag => (
-                    <React.Fragment key={tag.id}>
-                        <span>{tag.name}</span>
-                    </React.Fragment>
-                ))}
-            </div>
-            <div dangerouslySetInnerHTML={{ __html: `${blog.body}` }}></div>
-        </div>
+        <div className="flex flex-row">
+            <section className="w-9/12 bg-white m-10">
+                <section className="inner p-10">
+                    <img src={blog.eyeCatch.url} />
+                    <h1>{blog.title}</h1>
+                    <div>
+                        {blog.tags.map(tag => (
+                            <React.Fragment key={tag.id}>
+                                <Tag tag={tag} />
+                            </React.Fragment>
+                        ))}
+                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: marked(blog.body) }} />
+                </section>
+            </section>
+            <section className="w-3/12e p-2 mt-10">
+                <p>ここにリストが入ります</p>
+            </section>
+        </div >
     );
 };
 
@@ -61,4 +72,4 @@ export const getStaticProps = async context => {
     };
 };
 
-export default BlogId;
+export default BlogId
