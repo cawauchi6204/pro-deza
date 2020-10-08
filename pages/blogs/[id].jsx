@@ -1,10 +1,20 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch';
-import marked from 'marked'
+import cheerio from 'cheerio'
 
 import Tag from '../../components/atoms/Tag'
 
 const BlogId = ({ blog }) => {
+    // 目次の作成
+    const $ = cheerio.load(blog.body);
+    const headings = $('h1, h2, h3').toArray();
+    const toc = headings.map(data => ({
+        text: data.children[0].data,
+        id: data.attribs.id,
+        name: data.name
+    }));
+    console.log(toc)
+
     return (
         <div className="flex flex-row">
             <section className="w-9/12 bg-white m-10">
@@ -22,7 +32,14 @@ const BlogId = ({ blog }) => {
                 </section>
             </section>
             <section className="w-3/12e p-2 mt-10">
-                <p>ここにリストが入ります</p>
+                <p>目次</p>
+                <ul>
+                    {toc.map(item => (
+                        <li>
+                            <span>{item.text}</span>
+                        </li>
+                    ))}
+                </ul>
             </section>
         </div >
     );
