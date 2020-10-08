@@ -5,6 +5,8 @@ import Header from '../components/templates/Header'
 import Footer from '../components/templates/Footer'
 import CardList from '../components/molecules/CardList'
 import SideBar from '../components/templates/SideBar'
+import Sample from '../components/atoms/sample'
+import ScrollUp from '../components//atoms/ScrollUp'
 
 //これはpropsで参照してprops.blogsでも取れるが、分割代入で{ blogs } とすることで使いやすくなる
 const Home = ({ blogs }) => {
@@ -19,7 +21,9 @@ const Home = ({ blogs }) => {
         </section>
         <SideBar />
       </main>
+      <ScrollUp className="mx-10" />
       <Footer />
+      <Sample />
     </>
   );
 };

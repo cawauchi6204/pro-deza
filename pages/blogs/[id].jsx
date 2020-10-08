@@ -1,6 +1,7 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch';
 import cheerio from 'cheerio'
+import { Link } from 'react-scroll';
 
 import Tag from '../../components/atoms/Tag'
 
@@ -36,7 +37,15 @@ const BlogId = ({ blog }) => {
                 <ul>
                     {toc.map(item => (
                         <li>
-                            <span>{item.text}</span>
+                            <Link
+                                activeClass="active"
+                                to={item.id}
+                                spy={true}
+                                smooth={true}
+                                offset={-30}
+                                duration={800}
+                                className="cursor-pointer"
+                            >{item.text}</Link>
                         </li>
                     ))}
                 </ul>
