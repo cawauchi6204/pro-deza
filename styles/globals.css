@@ -10,6 +10,36 @@ body {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+pre {
+	margin: 1em 0; /* ブロック前後の余白 */
+	padding: 1em; /* ブロック内の余白 */
+	border-radius: 0.5rem; /* 角丸 */
+	background: #25292f; /* 背景色 */
+	color: #fff; /* 文字色 */
+	white-space: pre-wrap; /* はみ出たときに折り返す */
+}
+
+code {
+	font-family: Consolas, Menlo, Monaco, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Meiryo, monospace;
+}
+
 .vertical-card {
 	@apply bg-white rounded-lg overflow-hidden shadow-xl my-6 mx-0;
 	background-color: #f0f0f0;

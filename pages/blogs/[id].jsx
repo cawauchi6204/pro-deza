@@ -18,7 +18,7 @@ const BlogId = ({ blog }) => {
                             </React.Fragment>
                         ))}
                     </div>
-                    <div dangerouslySetInnerHTML={{ __html: marked(blog.body) }} />
+                    <div dangerouslySetInnerHTML={{ __html: blog.body }} />
                 </section>
             </section>
             <section className="w-3/12e p-2 mt-10">
