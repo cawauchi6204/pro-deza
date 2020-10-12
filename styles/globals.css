@@ -61,4 +61,19 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+.toc1 {
+	font-size: 1em;
+}
+
+.toc2 {
+	font-size: 1em;
+	padding-left: 1em;
+}
+
+.toc3 {
+	font-size: 1em;
+	padding-left: 1em;
+}
+
 @tailwind utilities;

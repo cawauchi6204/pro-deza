@@ -1,9 +1,11 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch';
 import cheerio from 'cheerio'
-import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook } from '@fortawesome/free-solid-svg-icons'
 
 import Tag from '../../components/atoms/Tag'
+import Toc from '../../components/atoms/Toc'
 
 const BlogId = ({ blog }) => {
     // 目次の作成
@@ -20,7 +22,7 @@ const BlogId = ({ blog }) => {
         <div className="flex flex-row">
             <section className="w-9/12 bg-white m-10">
                 <section className="inner p-10">
-                    <img src={blog.eyeCatch.url} />
+                    <img src={blog.eyeCatch.url} className="w-9/12 h-auto mx-auto" />
                     <h1>{blog.title}</h1>
                     <div>
                         {blog.tags.map(tag => (
@@ -33,22 +35,14 @@ const BlogId = ({ blog }) => {
                 </section>
             </section>
             <section className="w-3/12e p-2 mt-10">
-                <p>目次</p>
-                <ul>
-                    {toc.map(item => (
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to={item.id}
-                                spy={true}
-                                smooth={true}
-                                offset={-30}
-                                duration={800}
-                                className="cursor-pointer"
-                            >{item.text}</Link>
-                        </li>
-                    ))}
-                </ul>
+                <article className="fixed">
+                    <p className="mb-5"><FontAwesomeIcon icon={faBook} className="mr-1" />目次</p>
+                    <ul>
+                        {toc.map(item => (
+                            <Toc item={item} />
+                        ))}
+                    </ul>
+                </article>
             </section>
         </div >
     );

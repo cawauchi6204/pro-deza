@@ -13,14 +13,19 @@ const Home = ({ blogs }) => {
     <>
       <Header />
       <main className="flex-row flex justify-between pt-20">
-        <section className="w-9/12">
-          <h2 className="title top-title text-3xl">プログラミング</h2>
+        <section className="w-4/12">
+          <h2 className="title top-title text-center text-3xl">プログラミング</h2>
           <p className="text-center text-teal-500 text-2xl py-4"></p>
           <CardList blogs={blogs} />
         </section>
-        <SideBar />
+        <section className="w-4/12">
+          <h2 className="title top-title text-center text-3xl">デザイン</h2>
+          <p className="text-center text-teal-500 text-2xl py-4"></p>
+          <CardList blogs={blogs} />
+        </section>
+        <SideBar className="w-3/12" />
       </main>
-      <ScrollUp className="mx-10" />
+      <ScrollUp className="mx-auto fixed" />
       <Footer />
     </>
   );
