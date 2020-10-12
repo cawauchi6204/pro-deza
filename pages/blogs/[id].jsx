@@ -1,9 +1,9 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch';
 import cheerio from 'cheerio'
-import { Link } from 'react-scroll';
 
 import Tag from '../../components/atoms/Tag'
+import Toc from '../../components/atoms/Toc'
 
 const BlogId = ({ blog }) => {
     // 目次の作成
@@ -33,22 +33,14 @@ const BlogId = ({ blog }) => {
                 </section>
             </section>
             <section className="w-3/12e p-2 mt-10">
-                <p>目次</p>
-                <ul>
-                    {toc.map(item => (
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to={item.id}
-                                spy={true}
-                                smooth={true}
-                                offset={-30}
-                                duration={800}
-                                className="cursor-pointer"
-                            >{item.text}</Link>
-                        </li>
-                    ))}
-                </ul>
+                <article className="fixed">
+                    <p>目次</p>
+                    <ul>
+                        {toc.map(item => (
+                            <Toc item={item} />
+                        ))}
+                    </ul>
+                </article>
             </section>
         </div >
     );
