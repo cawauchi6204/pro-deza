@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const Toc = ({ item }) => {
     if (item.name === 'h1') {
         return (
-            < li >
+            <li>
                 <Link
                     activeClass="active"
                     to={item.id}

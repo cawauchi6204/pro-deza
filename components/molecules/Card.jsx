@@ -6,7 +6,7 @@ import Tag from '../atoms/Tag'
 
 const Card = ({ blog }) => {
     return (
-        <div key={blog.id} className="vertical-card bg-gray w-4/12 flex flex-col inline-block">
+        <div key={blog.id} className="vertical-card bg-gray w-9/12 flex flex-col inline-block mx-auto">
             <div>
                 <Link href="/blogs/[id]" as={`blogs/${blog.id}`}>
                     <a>

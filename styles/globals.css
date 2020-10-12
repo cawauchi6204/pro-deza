@@ -63,17 +63,17 @@ a {
 }
 
 .toc1 {
-	font-size: 1.25em;
+	font-size: 1em;
 }
 
 .toc2 {
-	font-size: 1.25em;
-	padding-left: 1.25em;
+	font-size: 1em;
+	padding-left: 1em;
 }
 
 .toc3 {
-	font-size: 1.25em;
-	padding-left: 1.25em;
+	font-size: 1em;
+	padding-left: 1em;
 }
 
 @tailwind utilities;

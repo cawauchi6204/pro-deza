@@ -13,10 +13,8 @@ const ScrollUp = () => {
     }
 
     return (
-        <div className="scroll scroll-up">
-            <div className="arrow bounce" style={bounce}>
-                <FontAwesomeIcon size="5x" color="#00bfa6" className="cursor-pointer" onClick={scrollToTop} icon={faArrowAltCircleUp} />
-            </div>
+        <div className="arrow bounce scroll scroll-up" style={bounce}>
+            <FontAwesomeIcon size="5x" color="#00bfa6" className="cursor-pointer" onClick={scrollToTop} icon={faArrowAltCircleUp} />
         </div>
     )
 }
