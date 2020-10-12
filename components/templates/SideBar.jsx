@@ -13,7 +13,7 @@ const SideBar = () => (
                 <li className="mt-2">cawauchi</li>
                 <li className="mt-2">Front-end engineer</li>
                 <li className="mt-2">
-                    <a href="https://github.com/cawauchi6204"><FontAwesomeIcon className="mr-1" icon={faGithub} />Github</a></li>
+                    <a href="https://github.com/cawauchi6204" target="_blank"><FontAwesomeIcon className="mr-1" icon={faGithub} />Github</a></li>
                 <li className="mt-2"><FontAwesomeIcon className="mr-1" icon={faEnvelope} />Email</li>
             </ul>
         </nav>
