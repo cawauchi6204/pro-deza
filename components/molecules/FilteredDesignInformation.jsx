@@ -1,5 +1,5 @@
 import React from 'react'
-import DesignCardList from './DesignCardlist'
+import DesignCardList from './DesignCardList'
 
 const FilteredDesignInformation = ({ blogs }) => {
     const filteredBlogs = blogs.filter(blog => {
