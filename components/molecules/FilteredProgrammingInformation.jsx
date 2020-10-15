@@ -9,6 +9,7 @@ const FilteredProgrammingInformation = ({ blogs }) => {
     return (
         <ProgrammingCardList filteredBlogs={filteredBlogs} />
     )
+    // test
 };
 
 export default FilteredProgrammingInformation;
