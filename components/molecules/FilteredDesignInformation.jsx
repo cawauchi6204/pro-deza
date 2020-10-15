@@ -8,6 +8,7 @@ const FilteredDesignInformation = ({ blogs }) => {
     console.log(filteredBlogs)
     return (
         <DesignCardList filteredBlogs={filteredBlogs} />
+        // hoge
     )
 };
 export default FilteredDesignInformation;

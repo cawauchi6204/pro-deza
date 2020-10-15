@@ -8,6 +8,7 @@ const ProgrammingCardList = ({ filteredBlogs }) => {
                 <ProgrammingCard filteredBlogs={filteredBlogs} />
             ))}
         </>
+        //hogehoge
     )
 };
 

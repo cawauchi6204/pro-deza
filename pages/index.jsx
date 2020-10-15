@@ -35,6 +35,7 @@ const Home = ({ blogs }) => {
       </main>
       <ScrollUp className="mx-auto fixed" />
       <Footer />
+      {/* hoge */}
     </>
   );
 };

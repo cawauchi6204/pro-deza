@@ -9,7 +9,7 @@ const FilteredProgrammingInformation = ({ blogs }) => {
     return (
         <ProgrammingCardList filteredBlogs={filteredBlogs} />
     )
-    // hoge
+    // hogege
 };
 
 export default FilteredProgrammingInformation;

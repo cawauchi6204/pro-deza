@@ -27,6 +27,7 @@ const DesignCard = ({ filteredBlogs }) => {
                 </Link>
             </div>
         </div>
+        // hogehoge
     )
 }
 
