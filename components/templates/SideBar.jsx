@@ -19,6 +19,7 @@ const SideBar = () => (
         </nav>
         <span className="mt-2">2019/11/14 ~プログラミング独学開始</span>
         <span className="mt-2">2020/8/3~ フロントエンドエンジニア</span>
+        <span className="mt-5">プログラマー楽しい良い良い良い良い良いいい良いいいいいい</span>
     </aside>
 )
 
