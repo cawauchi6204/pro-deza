@@ -10,5 +10,4 @@ const FilteredDesignInformation = ({ blogs }) => {
         <DesignCardList filteredBlogs={filteredBlogs} />
     )
 };
-
 export default FilteredDesignInformation;

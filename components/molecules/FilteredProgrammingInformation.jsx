@@ -1,5 +1,5 @@
 import React from 'react'
-import ProgrammingCardList from './ProgrammingCardlist'
+import ProgrammingCardList from './ProgrammingCardList'
 
 const FilteredProgrammingInformation = ({ blogs }) => {
     const filteredBlogs = blogs.filter(blog => {
