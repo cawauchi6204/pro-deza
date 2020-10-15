@@ -21,7 +21,11 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "pages/index.jsx",
+    "pages/_app.js",
+    "pages/blogs/[id].jsx",
+    "pages/api/hello.js"
   ],
   "exclude": [
     "node_modules"
