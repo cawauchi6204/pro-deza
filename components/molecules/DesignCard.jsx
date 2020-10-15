@@ -30,6 +30,4 @@ const DesignCard = ({ filteredBlogs }) => {
     )
 }
 
-
-
 export default DesignCard
